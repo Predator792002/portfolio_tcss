@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <!-- ✅ Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ✅ Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xZ3eZl+1aFf8CkK0wM5Qv7Z5C1O9zHfKsmF1yN6aZCk5Xq7Tz3P3h1dUQ5sGd5D9V0h1kG8E2zg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+
+<body class="bg-[#191724] text-gray-800 font-sans scroll-smooth">
+    <!-- ✅ Navbar Component -->
+    <nav class="bg-[#191724] text-[#e0def4] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Brand Name -->
+            <h1 class="text-xl font-bold">MyPortfolio</h1>
+
+
+            <!-- TODO: Create ul element for navigation links -->
+            <!-- Hint: Use flex and space-x-4 for spacing -->
+            <ul class="flex space-x-4 ">
+                <li><a href="#about" class="hover:text-[#b4637a]">About</a></li>
+                <li><a href="#skills" class="hover:text-[#b4637a]">Skills</a></li>
+                <li><a href="#projects" class="hover:text-[#b4637a]">Projects</a></li>
+                <li><a href="#contact" class="hover:text-[#b4637a]">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero section with your image, name and title -->
+    <section class="bg-[#f2e9e1] py-12">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- Profile Image -->
+            <div class="w-40 h-40 mb-6 md:mb-0">
+                <img src="/20250815_184839.jpg"
+                    alt="Profile" class="rounded-full object-cover w-full h-full shadow-lg" />
+            </div>
+
+
+            <!-- Intro Text -->
+            <div class="text-center md:text-left">
+                <h2 class="text-3xl font-bold text-[#44415a]">
+                    Hi, I'm <span class="text-[#eb6f92]">Ayush</span>
+                </h2>
+                <p class="text-xl text-[#56526e] mt-2">A Passionate Software Developer</p>
+
+
+                <!-- TODO: Add a button that says "Download Resume" -->
+                <div class="mt-4">
+                    <a href="#" download
+                        class="bg-[#eb6f92] text-[#e0def4] px-6 py-2 rounded hover:bg-[#b4637a] transition duration-300">Download
+                        Resume</a>
+
+                </div>
+    </section>
+
+
+
+    <!-- ✅ About Me Section -->
+    <section id="about" class="py-12 bg-[#faf4ed]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#26233a] mb-4 text-center">
+                About Me
+            </h2>
+
+
+            <!-- TODO: Add a paragraph describing yourself. Make sure it's center aligned and uses max-w-xl -->
+            <p class="text-[#575279] text-center max-w-xl mx-auto">
+                I am a Software developer with a passion for creating beautiful and functional websites. I love coding and
+                always strive to learn new technologies to improve my skills.
+            </p>
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Skills / Tech Stack Section -->
+    <section id="sills" class="py-12 bg-[#f2e9e1]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold  mb-8 text-[#26233a] text-center">
+                Tech Stack
+            </h2>
+
+
+            <!-- TODO: Create a responsive grid of skills using Tailwind -->
+            <!-- Hint: Use grid, gap-4, grid-cols-2 for mobile and grid-cols-4 for larger screens -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">HTML</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">CSS</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">JavaScript</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">TypeScript</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">React</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Node.js</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Tailwind CSS</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">NextJS</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Git/GitHub</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Golang</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">SQLite</h3>
+                </div>
+                <div class="bg-[#2a273f] p-4 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">PostgresSQL</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Projects Section -->
+    <section id="projects" class="py-12 bg-[#faf4ed]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold text-[#26233a] mb-8 text-center">
+                Projects
+            </h2>
+
+
+            <!-- TODO: Create a responsive grid of project cards (name, description, button) -->
+            <!-- Hint: Use grid-cols-1 md:grid-cols-3, gap-6 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">WebGator</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/WebGator" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                </div>
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">PokiInfo</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/PokiInfo" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                </div>
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Brewly</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/Brewly" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                    <a href="https://predator792002.github.io/Brewly/" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300">Live
+                        Demo</a>
+                </div>
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">chirpy</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/chirpy" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                </div>
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">Git Doc</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/Git_Tech_Doc" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                    <a href="https://predator792002.github.io/Git_Tech_Doc/" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300">Live
+                        Demo</a>
+                </div>
+                <div class="bg-[#2a273f] p-6 rounded shadow hover:shadow-lg hover:shadow-[#191724] transition duration-300">
+                    <h3 class="text-lg text-[#e0def4] font-semibold">LexiCLI</h3>
+                    <p class="text-[#e0def4] mt-2">A brief description of the project goes here.</p>
+                    <a href="https://github.com/Predator792002/LexiCLI" target="_blank"
+                        class="mt-4 inline-block bg-[#eb6f92] text-[#e0def4] px-4 py-2 rounded hover:bg-[#b4637a] transition duration-300 mr-5">View
+                        Project</a>
+                </div>
+
+    </section>
+
+
+
+    <!-- ✅ Contact Me Section -->
+    <section id="contact" class="py-12 bg-[#f2e9e1]">
+        <div class="container mx-auto px-4 max-w-xl">
+            <h2 class="text-2xl font-bold text-gray-800 mb-8 text-center">
+                Contact Me
+            </h2>
+
+
+            <!-- TODO: Create a simple form with name, email, message input fields and a submit button -->
+            <!-- Hint: Use input, textarea with Tailwind form styling classes -->
+            <form class="space-y-4">
+                <input type="text" placeholder="Your Name"
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                <input type="email" placeholder="Your Email"
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500" />
+                <textarea placeholder="Your Message" rows="4"
+                    class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"></textarea>
+                <button type="submit"
+                    class="w-full bg-[#eb6f92] text-[#e0def4] px-6 py-2 rounded hover:bg-[#b4637a] transition duration-300">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- ✅ Footer -->
+    <footer class="bg-[#191724] text-[#e0def4] py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-sm">&copy; 2025 Ayush. All rights reserved.</p>
+            <!-- TODO: Add social media links like GitHub or LinkedIn with hover effects -->
+            <div class="mt-4 space-x-4"> <a href="https://github.com/Predator792002" class="hover:text-[#b4637a]" target="_blank">GitHub</a> <a href="https://www.linkedin.com/in/aayush-gupta-568403260/" target="_blank"
+                    class="hover:text-[#b4637a]">LinkedIn</a> <a href="https://x.com/AayushGupt77070" class="hover:text-[#b4637a]" target="_blank ">Twitter</a> </div>
+    </footer>
+
+
+</body>
+
+</html>
